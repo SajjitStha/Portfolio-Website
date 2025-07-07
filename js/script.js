@@ -83,23 +83,6 @@ let progressreact = setInterval(() => {
 }, rjsspeed);
 
 
-// filter using javascript
-$(document).ready(function () {
-  $(".filter-item").click(function () {
-    const value = $(this).attr("data-filter");
-    if (value == "all") {
-      $(".post").show("1000");
-    } else {
-      $(".post")
-        .not("." + value)
-        .hide("1000");
-      $(".post")
-        .filter("." + value)
-        .show("1000");
-    }
-  });
-});
-
 
 // javascript for sticky navbar even if u scroll the navbar will be fixed
 document.addEventListener("DOMContentLoaded", function(){
@@ -163,6 +146,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-item');
+    const posts = document.querySelectorAll('.post');
+
+    // Show only "game" posts on page load
+    posts.forEach(post => {
+        if (post.classList.contains('game')) {
+            post.style.display = 'block';
+        } else {
+            post.style.display = 'none';
+        }
+    });
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+            posts.forEach(post => {
+                if (post.classList.contains(filter)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
 
 
 

@@ -213,6 +213,10 @@ body{
 #myBtnContainer button:hover{
     color: #fca61f;
 }
+#myBtnContainer .filter-item.active {
+    color: #fca61f;
+}
+
 
 #myBtnContainer button:focus{
     outline: none;
@@ -391,4 +395,15 @@ footer .link-group a:hover{
 .text-muted {
     text-align: justify;
 }
+
+.artwork-img {
+    height: 250px; /* Set a fixed visual height */
+    object-fit: contain; /* Scale the image without cropping */
+    width: 100%; /* Make it full width inside card */
+    background-color: #f8f8f8; /* Optional: add padding background */
+    padding: 0px; /* Optional: add spacing around image */
+}
+
+
+
 
