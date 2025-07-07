@@ -54,7 +54,7 @@
                    id="navbarNav">
                   <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
                       <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Home</a>
+                          <a class="nav-link" href="#home">Home</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#service">Service</a>
@@ -65,15 +65,13 @@
                       <li class="nav-item">
                           <a class="nav-link" href="#portfolio">Portfolio</a>
                       </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#testimonial">Testimonials</a>
-                      </li>
+                      
                       <li class="nav-item">
                           <a class="nav-link" href="#blog">Blog</a>
                       </li>
                   </ul>
               </div>
-              <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+              <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"><a class="nav-link" href="#contact">Contact</a></button>
           </div>
       </nav>
       <!-- navbar ends here -->
@@ -86,14 +84,16 @@
                       Hello! I Am <br /><span class="c-orange">Sajjit Shrestha</span>
                   </h2>
                   <p class="text-muted">
-                      I'm a UI/UX Designer/Graphics Designer/Game Developer
+                      I'm a UI/UX Designer, <br />
+                      Graphics Designer,<br />
+                      Indie Game Developer.
                   </p>
-                  <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                  <button class="c-btn h-btn mt-5 py-3 px-5 rounded-pill">
                       Hire Me
                   </button>
                   <a href="" class="link ms-4 d-none">See My Work</a>
               </div>
-              <div class="col-10 col-md-2 d-none d-md-block">
+              <div class="col-10 col-md-3 d-none d-md-block">
                   <img src="images/me.png" class="img-fluid" alt="" />
               </div>
           </div>
@@ -109,62 +109,76 @@
               </h3>
           </div>
           <div class="row justify-content-evenly mt-5">
-              <div class="col-10 col-md-4" data-aos="fade-up">
-                  <div class="service-card">
-                      <div class="img">
-                          <img src="images/service-icon1.png"
-                               class="w-25 img-fluid img"
-                               alt="" />
+              <div class="row justify-content-between">
+                  <!-- UI/UX Design -->
+                  <div class="col-md-4 mb-4" data-aos="fade-up">
+                      <div class="service-card h-100">
+                          <div class="img text-center">
+                              <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+                          </div>
+                          <div class="content mt-3">
+                              <h4 class="text-center">UI/UX Design</h4>
+                              <p class="text-muted">
+                                  With over a decade of experience in UI/UX design, I specialize in creating user-friendly interfaces that
+                                  <span class="dots">...</span>
+                                  <span class="more-text d-none">
+                                      not only look great but also feel intuitive. From wireframes to final prototypes, I focus on designing seamless digital experiences that keep users engaged.
+                                  </span>
+                              </p>
+                              <a href="javascript:void(0)" class="link read-more-btn">Read More</a>
+                          </div>
                       </div>
-                      <div class="content mt-3">
-                          <h4>Web Design</h4>
-                          <p class="text-muted">
-                              Dolor repellendus temporibus autem quibusdam officiis debitis
-                              rerum neces aibus minima veniam.
-                          </p>
-                          <a href="" class="link">Read More</a>
+                  </div>
+
+                  <!-- Game Development -->
+                  <div class="col-md-4 mb-4" data-aos="fade-up">
+                      <div class="service-card h-100">
+                          <div class="img text-center">
+                              <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+                          </div>
+                          <div class="content mt-3">
+                              <h4 class="text-center">Game Development</h4>
+                              <p class="text-muted">
+                                  I’ve been diving into game development for almost a year now. It’s a space where
+                                  <span class="dots">...</span>
+                                  <span class="more-text d-none">
+                                      I get to experiment, build, and bring ideas to life from core mechanics to visual polish—mostly using Unity and C#. Every project teaches me something new, and I love that.
+                                  </span>
+                              </p>
+                              <a href="javascript:void(0)" class="link read-more-btn">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Logo/Graphics Design -->
+                  <div class="col-md-4 mb-4" data-aos="fade-up">
+                      <div class="service-card h-100">
+                          <div class="img text-center">
+                              <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+                          </div>
+                          <div class="content mt-3">
+                              <h4 class="text-center">Logo/Graphics Design</h4>
+                              <p class="text-muted">
+                                  Designing logos and visual assets is about capturing a brand’s essence in a single
+                                  <span class="dots">...</span>
+                                  <span class="more-text d-none">
+                                      glance. I create clean, modern graphics that stand out and communicate clearly—whether for digital platforms, merchandise, or print materials.
+                                  </span>
+                              </p>
+                              <a href="javascript:void(0)" class="link read-more-btn">Read More</a>
+                          </div>
                       </div>
                   </div>
               </div>
-              <div class="col-md-4 col-10" data-aos="fade-up">
-                  <div class="service-card">
-                      <div class="img">
-                          <img src="images/service-icon2.png"
-                               class="w-25 img-fluid img"
-                               alt="" />
-                      </div>
-                      <div class="content mt-3">
-                          <h4>Game Development</h4>
-                          <p class="text-muted">
-                              Dolor repellendus temporibus autem quibusdam officiis debitis
-                              rerum neces aibus minima veniam.
-                          </p>
-                          <a href="" class="link">Read More</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 col-10" data-aos="fade-up">
-                  <div class="service-card">
-                      <div class="img">
-                          <img src="images/service-icon3.png"
-                               class="w-25 img-fluid img"
-                               alt="" />
-                      </div>
-                      <div class="content mt-3">
-                          <h4>Debugging</h4>
-                          <p class="text-muted">
-                              Dolor repellendus temporibus autem quibusdam officiis debitis
-                              rerum neces aibus minima veniam.
-                          </p>
-                          <a href="" class="link">Read More</a>
-                      </div>
-                  </div>
-              </div>
+
           </div>
       </section>
       <!-- expertise section ends here -->
       <!-- skill section starts -->
       <section class="skill mt-5 py-5" id="about">
+          <div class="heading text-center pt-5">
+              
+          </div>
           <div class="row justify-content-evenly">
               <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
                   <div class="row justify-content-evenly">
@@ -174,7 +188,7 @@
                                   <span class="progress-value html-progress">0%</span>
                               </div>
                               <br />
-                              <span class="text">HTML & CSS</span>
+                              <span class="text">Unity</span>
                           </div>
                       </div>
                       <div class="col-10 col-md-6 mt-4 mt-md-0">
@@ -183,7 +197,7 @@
                                   <span class="progress-value javascript-progress">0%</span>
                               </div>
                               <br />
-                              <span class="text">JavaScript</span>
+                              <span class="text">Blender</span>
                           </div>
                       </div>
                   </div>
@@ -194,7 +208,7 @@
                                   <span class="progress-value php-progress">0%</span>
                               </div>
                               <br />
-                              <span class="text">PHP</span>
+                              <span class="text">C#</span>
                           </div>
                       </div>
                       <div class="col-10 col-md-6 mt-4 mt-md-0">
@@ -203,7 +217,7 @@
                                   <span class="progress-value reactjs-progress">0%</span>
                               </div>
                               <br>
-                              <span class="text">ReactJS</span>
+                              <span class="text">Photoshop & Illustrator</span>
                           </div>
                       </div>
                   </div>
@@ -213,13 +227,14 @@
                       <small>My Skills</small>
                       <h3>Beautiful & Unique Digital Experiences</h3>
                       <p class="text-muted">
-                          Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
-                          aliquid exrea commodi consequatur magni dolores aos qui ratione
-                          voluptatem nesciunt.
+                          Over the years, I’ve developed a unique blend of creative and technical skills that help me bring ideas to life  from interactive applications to immersive game worlds.
+
+                          Whether I’m designing smooth user experiences in Unity, sculpting assets in Blender, coding gameplay systems in C#, or crafting compelling visuals in Photoshop and Illustrator, I strive to deliver work that’s not just functional  but visually impactful and user-focused.
+
+
                       </p>
                       <p class="text-muted">
-                          Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
-                          consequntar magni dolores.
+                          This combination of disciplines allows me to move fluidly between code and design, making me comfortable working across different stages of digital production.
                       </p>
                       <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
                           <!-- here download attribute is used for adding download functionality to button  -->
@@ -242,9 +257,11 @@
           <div id="myBtnContainer" class="text-center mt-4">
               <!-- here we will create custom attribute using data- for filtering -->
               <button class="filter-item" data-filter="all">All</button>
-              <button class="filter-item" data-filter="game">Game</button>
-              <button class="filter-item" data-filter="webapp">Designs</button>
-              
+              <button class="filter-item" data-filter="game">Games</button>
+              <button class="filter-item" data-filter="design">Designs</button>
+              <button class="filter-item" data-filter="art">Arts</button>
+
+
           </div>
           <div class="portfolio-body">
               <div class="row justify-content-evenly px-4">
@@ -264,20 +281,8 @@
                           </div>
                       </div>
                   </div>
-                  <!--<div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                      <div class="card">
-                          <img src="images/currency-converter.png"
-                               class="card-img-top"
-                               alt="..." />
-                          <div class="card-body text-center">
-                              <h4 class="card-title">Converter App</h4>
-                              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                              <span class="badge bg-secondary badge-pill">JavaScript</span>
-                              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
-                              <a href="#" class="read-more-btn link">Read More</a>
-                          </div>
-                      </div>
-                  </div>-->
+
+                  
                   
                   </div>
               </div>
@@ -285,7 +290,7 @@
       </section>
       <!-- portfolio section ends here -->
 
-      <!-- testimonial section starts  -->
+      <!-- testimonial section starts  
       <section class="testimonial mt-5 pt-5" id="testimonial">
           <div class="row justify-content-evenly">
               <div class="col-md-4 col-10" data-aos="slide-right">
@@ -295,7 +300,7 @@
                   <div class="heading">
                       <small>Testimonials</small>
                       <h3>Happy Clients Feedback</h3>
-                      <!-- here we will use carousel element from bootstrap -->
+                      <!-- here we will use carousel element from bootstrap 
                       <div id="carouselExampleControls"
                            class="carousel slide"
                            data-bs-ride="carousel">
@@ -368,7 +373,7 @@
               </div>
           </div>
       </section>
-      <!-- testimonial ends here -->
+      -->
       <!-- blog section starts -->
       <section class="blog mt-5 pb-5" id="blog">
           <div class="heading text-center pt-5">
@@ -636,7 +641,7 @@
                           <i class="bi bi-geo-alt-fill"></i>
                       </div>
                       <div class="col-11">
-                          <p>121 King Street Melbourne, 3000, Australia</p>
+                          <p>Chabahil, Kathmandu 44600, Nepal</p>
                       </div>
                   </div>
                   <div class="row justify-content-evenly">
@@ -644,7 +649,7 @@
                           <i class="bi bi-telephone-fill"></i>
                       </div>
                       <div class="col-11">
-                          <p>+91 9527818693</p>
+                          <p>+977 9861432490</p>
                       </div>
                   </div>
                   <div class="row justify-content-evenly">
@@ -652,7 +657,7 @@
                           <i class="bi bi-send-fill"></i>
                       </div>
                       <div class="col-11">
-                          <p>codewithpawan@gmail.com</p>
+                          <p>sajjitshresthawk@gmail.com</p>
                       </div>
                   </div>
                   <div class="row justify-content-evenly">
@@ -660,7 +665,7 @@
                           <i class="bi bi-globe-americas"></i>
                       </div>
                       <div class="col-11">
-                          <p>codingpawan.com</p>
+                          <p>sajjitshrestha.com.np</p>
                       </div>
                   </div>
               </div>

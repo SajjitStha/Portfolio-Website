@@ -3,7 +3,7 @@ let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
 
 let htmlStartValue = 0,
-  htmlEndValue = 90,
+  htmlEndValue = 50,
   htmlspeed = 30;
 
 let progresshtml = setInterval(() => {
@@ -24,7 +24,7 @@ let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
 let javascriptStartValue = 0,
-  javascriptEndValue = 75,
+  javascriptEndValue = 45,
   jsspeed = 30;
 
 let progressjs = setInterval(() => {
@@ -66,7 +66,7 @@ let reactProgress = document.querySelector(".reactjs"),
   reactValue = document.querySelector(".reactjs-progress");
 
 let reactStartValue = 0,
-  reactEndValue = 30,
+  reactEndValue = 60,
   rjsspeed = 30;
 
 let progressreact = setInterval(() => {
@@ -142,3 +142,28 @@ mybutton.addEventListener("click",function(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const paragraph = btn.previousElementSibling;
+            const moreText = paragraph.querySelector('.more-text');
+            const dots = paragraph.querySelector('.dots');
+            const isHidden = moreText.classList.contains('d-none');
+
+            if (isHidden) {
+                moreText.classList.remove('d-none');
+                dots.classList.add('d-none');
+                btn.textContent = 'Read Less';
+            } else {
+                moreText.classList.add('d-none');
+                dots.classList.remove('d-none');
+                btn.textContent = 'Read More';
+            }
+        });
+    });
+});
+
+
+
+
