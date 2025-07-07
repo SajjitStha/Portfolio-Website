@@ -140,8 +140,8 @@ body{
 }
 
 /* skill section starts */
-.skill{
-    background-color: rgb(234, 234, 249);
+.skill {
+    background: linear-gradient(120deg, #fdfdfd 0%, #f1f1f1 100%);
 }
 .progress-card{
     padding: 12% 10% 10% 15%;
@@ -254,8 +254,8 @@ body{
 }
 
 /* blog section starts */
-.blog{
-    background-color: #f2f2ff;
+.blog {
+    background:linear-gradient(120deg, #fdfdfd 0%, #f1f1f1 100%);
 }
 .blog .blogpost .card{
     border: none;
