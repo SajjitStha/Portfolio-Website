@@ -2,7 +2,9 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
+
 /* styling menu icon */
 .nav-menu{
     border: none;
@@ -43,6 +45,7 @@ body{
     font-size: 1.2rem;
 }
 /* styling home section starts */
+
 .home {
     background: linear-gradient(120deg, #fdfdfd 0%, #f1f1f1 100%);
     padding: 30px 0px 10px 0px;
@@ -103,7 +106,7 @@ body{
         transform: translateX(0);
     }
     50%{
-        transform: translateX(-24px);
+        transform: translateX(0);
     }
     100%{
         transform: translateX(0);
