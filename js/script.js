@@ -24,7 +24,7 @@ let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
 let javascriptStartValue = 0,
-  javascriptEndValue = 45,
+  javascriptEndValue = 60,
   jsspeed = 30;
 
 let progressjs = setInterval(() => {
