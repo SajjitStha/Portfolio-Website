@@ -1,3 +1,31 @@
+// Copy eSewa ID button
+(function () {
+    const btn = document.getElementById('copy-esewa-id');
+    const idEl = document.getElementById('esewa-id');
+    if (!btn || !idEl) return;
+
+    btn.addEventListener('click', async () => {
+        const text = idEl.textContent.trim();
+        try {
+            await navigator.clipboard.writeText(text);
+            const original = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => (btn.textContent = original), 1500);
+        } catch (e) {
+            // fallback for older browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            const original = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => (btn.textContent = original), 1500);
+        }
+    });
+})();
+
 // htmlcss progress circular bar 
 let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
