@@ -375,7 +375,11 @@ footer .link-group a:hover{
     background-color: #ff6600;
 } */
 
-
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
 /* Instagram */
 .social-links .instagram{
   color:#E1306C;                 /* instagram pink */
@@ -393,11 +397,7 @@ footer .link-group a:hover{
 .social-links .dribble{
     color: #f33a7e;
 }
-.social-links button:hover{
-    color: #fff;
-    transform: translateY(-20px);
-    transition-duration: 1s;
-}
+
 .social-links .dribble:hover{
     background-color: #f33a7e;
 }
