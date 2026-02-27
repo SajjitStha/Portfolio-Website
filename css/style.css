@@ -386,12 +386,7 @@ footer .link-group a:hover{
 }
 
 .social-links .instagram:hover{
-  background: linear-gradient(45deg,
-    #F58529,  /* orange */
-    #DD2A7B,  /* pink */
-    #8134AF,  /* purple */
-    #515BD4   /* blue */
-  );
+  background-color: #E1306C;
  
 }
 .social-links .dribble{
